@@ -14,6 +14,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-DiabeticU-DiabeticUTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-DiabeticU-DiabeticUTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		02C9F49A901849A58D0253E8 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 380022174C334BA58D56613C /* CircularStd-Black.otf */; };
+		F9FDCAFD059C47B3A723C81B /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 525BEA52477945EB838314AA /* CircularStd-Bold.otf */; };
+		B7FC940F46804A6B805208A0 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77A567FC5406407CB9D387C1 /* CircularStd-Book.otf */; };
+		57CAC8A3F3C441A1A657D651 /* CircularStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5740C9C2E5E341FF9E72FA76 /* CircularStd-Light.otf */; };
+		6D32A50BC7014BE390E2368E /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12EB3CDA907641B085B6ED33 /* CircularStd-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DiabeticU/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-DiabeticU-DiabeticUTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabeticU-DiabeticUTests.release.xcconfig"; path = "Target Support Files/Pods-DiabeticU-DiabeticUTests/Pods-DiabeticU-DiabeticUTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		380022174C334BA58D56613C /* CircularStd-Black.otf */ = {isa = PBXFileReference; name = "CircularStd-Black.otf"; path = "../js/assets/fonts/CircularStd-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		525BEA52477945EB838314AA /* CircularStd-Bold.otf */ = {isa = PBXFileReference; name = "CircularStd-Bold.otf"; path = "../js/assets/fonts/CircularStd-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		77A567FC5406407CB9D387C1 /* CircularStd-Book.otf */ = {isa = PBXFileReference; name = "CircularStd-Book.otf"; path = "../js/assets/fonts/CircularStd-Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5740C9C2E5E341FF9E72FA76 /* CircularStd-Light.otf */ = {isa = PBXFileReference; name = "CircularStd-Light.otf"; path = "../js/assets/fonts/CircularStd-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		12EB3CDA907641B085B6ED33 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; name = "CircularStd-Medium.otf"; path = "../js/assets/fonts/CircularStd-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				BE83CA70F32947CDABA7F7BA /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +158,19 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		BE83CA70F32947CDABA7F7BA /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				380022174C334BA58D56613C /* CircularStd-Black.otf */,
+				525BEA52477945EB838314AA /* CircularStd-Bold.otf */,
+				77A567FC5406407CB9D387C1 /* CircularStd-Book.otf */,
+				5740C9C2E5E341FF9E72FA76 /* CircularStd-Light.otf */,
+				12EB3CDA907641B085B6ED33 /* CircularStd-Medium.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -243,6 +267,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				02C9F49A901849A58D0253E8 /* CircularStd-Black.otf in Resources */,
+				F9FDCAFD059C47B3A723C81B /* CircularStd-Bold.otf in Resources */,
+				B7FC940F46804A6B805208A0 /* CircularStd-Book.otf in Resources */,
+				57CAC8A3F3C441A1A657D651 /* CircularStd-Light.otf in Resources */,
+				6D32A50BC7014BE390E2368E /* CircularStd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
