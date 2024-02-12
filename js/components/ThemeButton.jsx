@@ -1,24 +1,26 @@
 import React from 'react';
 import {Text, TouchableOpacity, View, StyleSheet} from 'react-native';
-import BottomSheet from './BottomSheet';
 
 const ThemeButton = props => {
   return (
-    <View style={themeButtonStyle.buttonShadow}>
+    <View style={!props.bgColor && themeButtonStyle.buttonShadow}>
       <TouchableOpacity
-        onPress={() => {
-          console.log('Press');
-          return <BottomSheet />;
-        }}
+        onPress={props.onPress}
         activeOpacity={0.8}
         style={[
           themeButtonStyle.themeButton,
-          {backgroundColor: props.bgColor || '#000080'},
+          props.bgColor && {
+            backgroundColor: props.bgColor,
+            borderColor: '#DCDCDC',
+          },
         ]}>
         <Text
           style={[
             themeButtonStyle.titleText,
-            {color: props.textColor || '#FFFFFF'},
+            props.textColor && {
+              color: props.textColor || '#FFFFFF',
+              fontFamily: 'CircularStd-Medium',
+            },
           ]}>
           {props.title}
         </Text>
@@ -36,17 +38,20 @@ const themeButtonStyle = StyleSheet.create({
     backgroundColor: '#000080',
     height: 60,
     borderRadius: 16,
+    borderWidth: 1,
+    borderColor: '#7575BA',
   },
   titleText: {
     fontSize: 16,
     color: '#FFFFFF',
-    fontWeight: 700,
+    fontFamily: 'CircularStd-Bold',
   },
   buttonShadow: {
+    backgroundColor: 'white',
+    borderRadius: 16,
     shadowColor: '#7575BA',
     shadowOffset: {width: 2, height: 10},
     shadowOpacity: 0.3,
     shadowRadius: 3,
-    marginHorizontal: 20,
   },
 });

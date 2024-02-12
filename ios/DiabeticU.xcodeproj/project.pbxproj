@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* DiabeticUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DiabeticUTests.m */; };
+		02C9F49A901849A58D0253E8 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 380022174C334BA58D56613C /* CircularStd-Black.otf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-DiabeticU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-DiabeticU.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-DiabeticU-DiabeticUTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-DiabeticU-DiabeticUTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		02C9F49A901849A58D0253E8 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 380022174C334BA58D56613C /* CircularStd-Black.otf */; };
-		F9FDCAFD059C47B3A723C81B /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 525BEA52477945EB838314AA /* CircularStd-Bold.otf */; };
-		B7FC940F46804A6B805208A0 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77A567FC5406407CB9D387C1 /* CircularStd-Book.otf */; };
 		57CAC8A3F3C441A1A657D651 /* CircularStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5740C9C2E5E341FF9E72FA76 /* CircularStd-Light.otf */; };
 		6D32A50BC7014BE390E2368E /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12EB3CDA907641B085B6ED33 /* CircularStd-Medium.otf */; };
+		7699B88040F8A987B510C191 /* libPods-DiabeticU-DiabeticUTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-DiabeticU-DiabeticUTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B7FC940F46804A6B805208A0 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77A567FC5406407CB9D387C1 /* CircularStd-Book.otf */; };
+		F9FDCAFD059C47B3A723C81B /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 525BEA52477945EB838314AA /* CircularStd-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 		00E356EE1AD99517003FC87E /* DiabeticUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiabeticUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* DiabeticUTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiabeticUTests.m; sourceTree = "<group>"; };
+		12EB3CDA907641B085B6ED33 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Medium.otf"; path = "../js/assets/fonts/CircularStd-Medium.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* DiabeticU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabeticU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DiabeticU/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = DiabeticU/AppDelegate.mm; sourceTree = "<group>"; };
@@ -42,18 +43,17 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DiabeticU/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DiabeticU/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-DiabeticU-DiabeticUTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiabeticU-DiabeticUTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		380022174C334BA58D56613C /* CircularStd-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Black.otf"; path = "../js/assets/fonts/CircularStd-Black.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-DiabeticU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabeticU.debug.xcconfig"; path = "Target Support Files/Pods-DiabeticU/Pods-DiabeticU.debug.xcconfig"; sourceTree = "<group>"; };
+		525BEA52477945EB838314AA /* CircularStd-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Bold.otf"; path = "../js/assets/fonts/CircularStd-Bold.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-DiabeticU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabeticU.release.xcconfig"; path = "Target Support Files/Pods-DiabeticU/Pods-DiabeticU.release.xcconfig"; sourceTree = "<group>"; };
+		5740C9C2E5E341FF9E72FA76 /* CircularStd-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Light.otf"; path = "../js/assets/fonts/CircularStd-Light.otf"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-DiabeticU-DiabeticUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabeticU-DiabeticUTests.debug.xcconfig"; path = "Target Support Files/Pods-DiabeticU-DiabeticUTests/Pods-DiabeticU-DiabeticUTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-DiabeticU.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DiabeticU.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A567FC5406407CB9D387C1 /* CircularStd-Book.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CircularStd-Book.otf"; path = "../js/assets/fonts/CircularStd-Book.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DiabeticU/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-DiabeticU-DiabeticUTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabeticU-DiabeticUTests.release.xcconfig"; path = "Target Support Files/Pods-DiabeticU-DiabeticUTests/Pods-DiabeticU-DiabeticUTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		380022174C334BA58D56613C /* CircularStd-Black.otf */ = {isa = PBXFileReference; name = "CircularStd-Black.otf"; path = "../js/assets/fonts/CircularStd-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		525BEA52477945EB838314AA /* CircularStd-Bold.otf */ = {isa = PBXFileReference; name = "CircularStd-Bold.otf"; path = "../js/assets/fonts/CircularStd-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		77A567FC5406407CB9D387C1 /* CircularStd-Book.otf */ = {isa = PBXFileReference; name = "CircularStd-Book.otf"; path = "../js/assets/fonts/CircularStd-Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5740C9C2E5E341FF9E72FA76 /* CircularStd-Light.otf */ = {isa = PBXFileReference; name = "CircularStd-Light.otf"; path = "../js/assets/fonts/CircularStd-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		12EB3CDA907641B085B6ED33 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; name = "CircularStd-Medium.otf"; path = "../js/assets/fonts/CircularStd-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +160,7 @@
 			sourceTree = "<group>";
 		};
 		BE83CA70F32947CDABA7F7BA /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				380022174C334BA58D56613C /* CircularStd-Black.otf */,
 				525BEA52477945EB838314AA /* CircularStd-Bold.otf */,
@@ -169,8 +169,8 @@
 				12EB3CDA907641B085B6ED33 /* CircularStd-Medium.otf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 

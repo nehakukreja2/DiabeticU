@@ -1,12 +1,22 @@
 import React from 'react';
 import {Text, TouchableOpacity, View, StyleSheet, Image} from 'react-native';
 
-const MenuOptions = () => {
+const MenuOptions = props => {
   return (
-    <View>
-      <TouchableOpacity style={menuOptionsStyle.optionView}>
-        <Image style={menuOptionsStyle.optionIcon}></Image>
-        <Text style={menuOptionsStyle.optionTitle}>Login with Google</Text>
+    <View style={menuOptionsStyle.containerView}>
+      <TouchableOpacity activeOpacity={0.8} style={menuOptionsStyle.optionView}>
+        <View
+          style={{
+            width: '100%',
+            alignItems: 'center',
+            flexDirection: 'row',
+          }}>
+          <Image
+            source={{uri: props.iconImg}}
+            style={menuOptionsStyle.optionIcon}
+          />
+          <Text style={menuOptionsStyle.optionTitle}>{props.title}</Text>
+        </View>
       </TouchableOpacity>
     </View>
   );
@@ -15,6 +25,10 @@ const MenuOptions = () => {
 export default MenuOptions;
 
 const menuOptionsStyle = StyleSheet.create({
+  containerView: {
+    marginHorizontal: 30,
+    marginVertical: 5,
+  },
   optionView: {
     height: 80,
     backgroundColor: '#F6F9FA',
@@ -23,12 +37,15 @@ const menuOptionsStyle = StyleSheet.create({
     alignItems: 'center',
   },
   optionIcon: {
-    height: 40,
-    width: 40,
-    backgroundColor: 'red',
+    marginLeft: 30,
+    height: 30,
+    width: 30,
   },
   optionTitle: {
+    marginLeft: 30,
     fontSize: 16,
     color: '#000000',
+    fontFamily: 'CircularStd-Bold',
+    fontWeight: '400',
   },
 });

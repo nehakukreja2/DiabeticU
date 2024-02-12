@@ -1,7 +1,9 @@
 import React, {useEffect} from 'react';
 import {View, Image, StyleSheet} from 'react-native';
+import AppImages from '../assets/images';
 
 const SplashScreen = ({navigation}) => {
+  console.log('....', AppImages.backArrow);
   useEffect(() => {
     setTimeout(() => {
       navigation.replace('LandingPage');
@@ -12,18 +14,14 @@ const SplashScreen = ({navigation}) => {
     <View style={splashStyles.containerView}>
       <View style={splashStyles.topContainer}>
         <Image
-          source={require('../assets/images/TopEclipseGroup/orangeCircle.png')}
+          source={AppImages.topOrangeCircleSplash}
           style={splashStyles.orangeCircle}
         />
-        <Image
-          source={require('../assets/images/TopEclipseGroup/semiCircle.png')}
-        />
+        <Image source={AppImages.topSemiCircleSplash} />
       </View>
+      <Image source={AppImages.diabeticUSplashLogo} />
       <Image
-        source={require('../assets/images/DiabeticULogo/DiabeticULogo.png')}
-      />
-      <Image
-        source={require('../assets/images/DiabeticU/BottomLogo.png')}
+        source={AppImages.diabeticUBottomLogo}
         style={splashStyles.bottomLogo}
       />
     </View>

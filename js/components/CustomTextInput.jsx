@@ -7,43 +7,60 @@ import {
   Animated,
   Easing,
   TouchableWithoutFeedback,
+  Image,
 } from 'react-native';
 
-const CustomTextInput = () => {
+const CustomTextInput = props => {
   const [isFocused, setIsFocused] = useState(false);
+
+  const handleInputFocus = () => {
+    setIsFocused(true);
+  };
+
+  const handleInputBlur = () => {
+    setIsFocused(false);
+  };
 
   const inputRef = useRef();
   const focusAnim = useRef(new Animated.Value(0)).current;
-  const opacityAnim = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     Animated.parallel([
       Animated.timing(focusAnim, {
         toValue: isFocused || !!'' ? 1 : 0,
-        duration: 150,
-        easing: Easing.bezier(0.4, 0, 0.2, 1),
-        useNativeDriver: true,
-      }),
-      Animated.timing(opacityAnim, {
-        toValue: isFocused || !!'' ? 1 : 0,
-        duration: 150,
+        duration: 200,
         easing: Easing.bezier(0.4, 0, 0.2, 1),
         useNativeDriver: true,
       }),
     ]).start();
-  }, [focusAnim, isFocused, opacityAnim]);
+  }, [focusAnim, isFocused]);
 
   return (
     <View style={textInputStyles.containerView}>
-      <TextInput
-        ref={inputRef}
-        placeholder="Phone Number/Email ID"
-        placeholderTextColor="#4F535E"
-        style={textInputStyles.inputField}
-        onFocus={event => {
-          setIsFocused(true);
-        }}
-      />
+      <View
+        style={{
+          justifyContent: 'center',
+        }}>
+        <TextInput
+          ref={inputRef}
+          placeholderTextColor="#4F535E"
+          style={textInputStyles.inputField}
+          onFocus={handleInputFocus}
+          onBlur={handleInputBlur}
+          onChangeText={props.onChangeText}
+        />
+        {props.isPassword && (
+          <Image
+            style={{
+              position: 'absolute',
+              right: 20,
+              height: 20,
+              width: 20,
+            }}
+            source={require('../assets/images/PasswordInvisible/PasswordInvisible.png')}
+          />
+        )}
+      </View>
       <TouchableWithoutFeedback onPress={() => inputRef.current?.focus()}>
         <Animated.View
           style={[
@@ -51,14 +68,14 @@ const CustomTextInput = () => {
               transform: [
                 {
                   scale: focusAnim.interpolate({
-                    inputRange: [0, 14],
-                    outputRange: [1, 0.75],
+                    inputRange: [0, 8],
+                    outputRange: [1, 1],
                   }),
                 },
                 {
                   translateY: focusAnim.interpolate({
                     inputRange: [0, 1],
-                    outputRange: [-12, -55],
+                    outputRange: [-25, -55],
                   }),
                 },
                 {
@@ -68,10 +85,9 @@ const CustomTextInput = () => {
                   }),
                 },
               ],
-              opacity: opacityAnim,
             },
           ]}>
-          <Text style={textInputStyles.fieldTitle}>Phone Number</Text>
+          <Text style={textInputStyles.fieldTitle}>{props.floatingText}</Text>
         </Animated.View>
       </TouchableWithoutFeedback>
     </View>
@@ -86,20 +102,23 @@ const textInputStyles = StyleSheet.create({
     borderWidth: 1,
     height: 60,
     borderColor: '#E7EBF3',
-    marginHorizontal: 20,
   },
   inputField: {
     paddingLeft: 10,
     marginTop: 5,
     marginHorizontal: 10,
     height: 50,
+    width: '80%',
   },
   fieldTitle: {
     position: 'absolute',
-    color: '#7F879A',
+    color: '#4F535E',
     backgroundColor: 'white',
     padding: 4,
     marginLeft: 20,
     top: -14,
+    fontSize: 16,
+    fontWeight: '500',
+    fontFamily: 'CircularStd-Light',
   },
 });
